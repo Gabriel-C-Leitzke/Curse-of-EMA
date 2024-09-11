@@ -13,9 +13,19 @@ width: 100vw;
 display: flex;
 height: 85vh;
 width: 100vw;
+justify-content: center;
+gap: 1rem;
 }
-
-
+.titulo {
+    display: flex;
+height: 10vh;
+align-items: center;
+justify-content: center;
+padding: 4rem;
+}
+.h1titulo {
+    font-size: 3rem;
+}
 
 
 
