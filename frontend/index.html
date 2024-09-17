@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-    <div class="divnav borda">
-        <div class="image"><img src="" alt="" srcset=""></div>
-        <h2 class="h2nav">Página Inicial</h2>
-        <h2 class="h2nav">Quem Somos</h2>
-        <h2 class="h2nav">Cursos</h2>
-        <h2 class="h2nav">Login</h2>
-    </div>
 
-    <main class="main borda2">
-<div class="titulo borda"><h1 class="h1titulo">Escola Municipal De Artes de Sinop</h1></div>
-</main>
+<body>
+    <header id="cab" class="">
+        <div id="menu" class="borda">
+            <div class="image borda" id="titulo">
+                <img class="logoEMA" src="./assets/logo_EMA.png" alt="" srcset="">
+            </div>
+            <div class="pages_nav borda"><a class="topnav borda" href="./">Página Inicial</a>
+                <a class="topnav borda" href="./">Quem Somos</a>
+                <div class="dropdown">
+                    <span class="topnav borda">Cursos</span>
+                    <div class="dropdown-content">
+                        <a href="./informatica.html" class="cursos">Informática</a><br>
+                        <a href="./pirotecnia.html" class="cursos">Pirotecnia</a><br>
+                        <a href="./pintura.html" class="cursos">Pintura</a><br>
+                        <a href="./ballet.html" class="cursos">Ballet</a><br>
+                        <a href="./violao.html" class="cursos">Violão</a><br>
+                        <a href="./teclado.html" class="cursos">Teclado</a><br>
+                        <a href="./fanfarra.html" class="cursos">Fanfarra</a><br>
+                    </div>
+                </div>
+                <a class="topnav borda" href="./">Login</a>
+            </div>
+        </div>
+    </div>
+</header>
+    <main class="main ">
+        <div class="titulo ">
+            <h1 class="h1titulo">Escola Municipal De Artes de Sinop</h1>
+        </div>
+    </main>
     <script src="./js/index.js"></script>
 </body>
+
 </html>

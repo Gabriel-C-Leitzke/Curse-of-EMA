@@ -4,11 +4,82 @@
     box-sizing: border-box;
 }
 
-.divnav {
-display: flex;
-height: 15vh;
-width: 100vw;
+#titulo {
+    color: white;
+    display: flex;
+    padding-left: 0px;
 }
+
+.logoEMA {
+    height: 5rem;
+    width: auto;
+}
+
+.pages_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
+}
+
+#cab {
+    display: flex;
+    background-color: rgb(0, 0, 255);
+    height: 15vh;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.topnav:hover{
+    background-color: rgb(0, 0, 185);
+    border-radius: 10px;
+}
+.topnav {
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    font-size: 23px;
+}
+.botoestopo {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    width: 10vw;
+}
+.dropdown {
+    /* position: relative; */
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.cursos {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.cursos:hover {
+    background-color: #777;
+}
+
 .main {
 display: flex;
 height: 85vh;
