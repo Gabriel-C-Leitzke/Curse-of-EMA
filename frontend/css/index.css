@@ -7,7 +7,7 @@
 #titulo {
     color: white;
     display: flex;
-    padding-left: 0px;
+    padding-left: 60px;
 }
 
 .logoEMA {
@@ -15,11 +15,16 @@
     width: auto;
 }
 
+#espaconavbar {
+width: 50vw;
+}
+
 .pages_nav {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-self: end;
+    gap: 1rem;
 }
 
 #cab {
@@ -39,9 +44,8 @@
     width: 100%;
     height: 100%;
 }
-.topnav:hover{
-    background-color: rgb(0, 0, 185);
-    border-radius: 10px;
+.topnav:hover{  
+    cursor: pointer;
 }
 .topnav {
     text-decoration: none;
