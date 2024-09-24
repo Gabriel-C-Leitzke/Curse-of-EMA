@@ -7,7 +7,6 @@
 #titulo {
     color: white;
     display: flex;
-    padding-left: 120px;
 }
 
 .logoEMA {
@@ -15,16 +14,12 @@
     width: auto;
 }
 
-#espaconavbar {
-width: 45vw;
-}
-
 .pages_nav {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-self: end;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #cab {
@@ -32,7 +27,7 @@ width: 45vw;
     background-color: rgba(0, 0, 0, 0.7);
     height: 20vh;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     overflow-y: hidden;
 }
@@ -40,7 +35,8 @@ width: 45vw;
 #menu {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-around;
+    gap: 30rem;
     width: 100%;
     height: 100%;
 }
