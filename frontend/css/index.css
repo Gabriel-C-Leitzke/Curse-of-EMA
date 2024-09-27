@@ -1,7 +1,9 @@
-*{
+* {
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 #titulo {
@@ -10,7 +12,7 @@
 }
 
 .logoEMA {
-    height: 7rem;
+    height: 5rem;
     width: auto;
 }
 
@@ -24,12 +26,13 @@
 
 #cab {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.7);
-    height: 20vh;
+    background-color: rgb(0, 179, 255);
+    height: 15vh;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     overflow-y: hidden;
+    position:fixed;
 }
 
 #menu {
@@ -40,72 +43,126 @@
     width: 100%;
     height: 100%;
 }
-.topnav:hover{  
+
+.topnav:hover {
     cursor: pointer;
 }
+
 .topnav {
     text-decoration: none;
     color: black;
     font-weight: 1000;
-    font-size: 23px;
+    font-size: 20px;
 }
+
 .botoestopo {
     display: flex;
     justify-content: flex-end;
     height: auto;
     width: 10vw;
 }
+
 .dropdown {
     /* position: relative; */
     display: inline-block;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .cursos {
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
+
 .cursos:hover {
     background-color: #777;
 }
 
 .main {
-display: flex;
-height: 85vh;
-width: 100%;
-justify-content: center;
-gap: 1rem;
-}
-.titulo {
     display: flex;
-height: 10vh;
-align-items: center;
-justify-content: center;
-padding: 4rem;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(0, 89, 0);
 }
+
+#div1 {
+    height: 100vh
+}
+.divTextImage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TitleAndParagraph{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 2rem;
+    color: white;
+}
+
 .h1titulo {
-    font-size: 3rem;
+    font-size: 2rem;  
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.image {
+    border-radius: 2rem;
+}
+#imagefront{
+    width: 50vw;
+    align-self: center;
+}
+#div1 {
+    padding-right: 2rem;
+    height: 100%;
+}
+#div2 {
+    padding-left: 1rem;
+    padding-top: 6rem;
+ height: 100%;
+ padding-right: 2rem;
+}
 
+#image2 {
+    width: 40vw;
+    height: 70vh;
+}
+#maps {
+    align-self: center;
+    border-radius: 1rem;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    align-items: center;
 
-
-
-
+}
+#imageFacebook {
+    height: 2rem;
+}
 .borda {
     border: 3px solid red;
 }
+
 .borda2 {
     border: 3px solid blue;
 }
