@@ -154,11 +154,19 @@ footer {
     justify-content: space-around;
     height: 15vh;
     align-items: center;
+}
 
+.textfooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-#imageFacebook {
-    height: 2rem;
+#facebookEMA {
+    text-decoration: none;
+    color: blue;
 }
+
 .borda {
     border: 3px solid red;
 }
