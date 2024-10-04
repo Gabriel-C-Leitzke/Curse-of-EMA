@@ -1,121 +1,183 @@
 * {
+    border: 0;
     margin: 0;
     box-sizing: border-box;
-    padding: 0;
-    
+    overflow-x: hidden;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 #titulo {
     color: white;
     display: flex;
-    width: 30vw;
-    padding-left: 0px;
 }
 
-.caloi {
-    padding-left: 80px;
+.logoEMA {
+    height: 5rem;
+    width: auto;
+}
+
+.pages_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
+    gap: 2rem;
+
 }
 
 #cab {
     display: flex;
-    background-color: red;
-    height: 13.5vh;
-    width: 100vw;
-    justify-content: space-between;
+    background-color: rgb(0, 179, 255);
+    height: 15vh;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
+    overflow-y: hidden;
+    position: fixed;
+    z-index: 999;
 }
 
 #menu {
-    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15rem;
+    width: 100%;
+    height: 100%;
 }
-.topnav:hover{
-    background-color: rgb(221, 0, 0);
-    border-radius: 15px;
+
+.topnav:hover {
+    cursor: pointer;
 }
+
 .topnav {
-    
     text-decoration: none;
-    padding-right: 40px;
     color: black;
     font-weight: 1000;
-    padding: 10px;
-    font-size: 23px;
+    font-size: 20px;
 }
+
 .botoestopo {
     display: flex;
     justify-content: flex-end;
     height: auto;
     width: 10vw;
 }
+
 .dropdown {
     /* position: relative; */
     display: inline-block;
-  }
-  .dropdown-content {
+
+}
+
+.dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
-    z-index: 1;
-  }
-  .dropdown:hover .dropdown-content {
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  .projetos {
+}
+
+.cursos {
     text-decoration: none;
     color: black;
-    font-size: 20px;
-  }
-  .projetos:hover {
-    background-color: #777;
-  }
-.quemsomos {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 80px;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 1.1rem;
 }
-#caixas {
-    gap: 70px;
+
+.cursos:hover {
+    background-color: #777;
+}
+
+.main {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(0, 89, 0);
+    z-index: 1;
+}
+
+#div1 {
+    height: 100vh
+}
+.divTextImage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TitleAndParagraph{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
     align-items: center;
     justify-content: center;
-    /* border: 3px solid white; */
-    padding: 30px;
+    gap: 2rem;
+    padding-left: 2rem;
+    color: white;
 }
 
-.caixatexto {
-    background-color:rgba(0, 0, 0, 0.1);
-    /* border: 3px solid white; */
-    border-radius: 20px;
-}
-.textos {
+.h1titulo {
+    font-size: 2rem;  
     text-align: center;
-    font-size: 16px;
-    width: 25vw;
-    color: rgb(0, 0, 0);
-    /* border: 3px solid white */
-}
-
-.titulos {
-    text-align: center;
-    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 25vw;
-    color: rgb(0, 0, 0);
-    /* border: 3px solid white */
 }
-#footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    background-color: gray;
+
+.image {
+    border-radius: 2rem;
+}
+#imagefront{
+    width: 50vw;
+    align-self: center;
+}
+#div1 {
+    padding-right: 2rem;
+    height: 100%;
+}
+#div2 {
+    padding-left: 1rem;
+    padding-top: 6rem;
+ height: 100%;
+ padding-right: 2rem;
+}
+#endereco{
+    padding-right: 1rem;
+}
+
+#image2 {
+    width: 40vw;
+    height: 70vh;
+}
+#maps {
+    align-self: center;
+    border-radius: 1rem;
+}
+footer {
     display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    align-items: center;
+}
+
+.textfooter {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 10000;
+
+}
+#facebookEMA {
+    text-decoration: none;
+    color: blue;
+}
+
+.borda {
+    border: 3px solid red;
+}
+
+.borda2 {
+    border: 3px solid blue;
 }

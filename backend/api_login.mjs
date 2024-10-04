@@ -33,53 +33,53 @@ app.use (
 //middleware
 app.use(json())
 
-//criar um novo cadastro
+//criar um novo login
 
-app.post("/novo-cadastro", (req, res) => {
-    const {nome, cpf, email, idade, senha} = req.body;
-    const novo_cadastro = {nome, cpf, email, idade, senha};
-    connection.query("insert into cadastros set ?", novo_cadastro, (err, result) => {
+app.post("/novo-login", (req, res) => {
+    const {nome, senha} = req.body;
+    const novo_login = {nome, senha};
+    connection.query("insert into login set ?", novo_login, (err, result) => {
         if (err) {
-            console.log("Deu erro para tentar cadastrar um novo cadastro");
+            console.log("Deu erro para tentar cadastrar um novo login");
         } else {
             res.json(result);
         }
     });
 });
 
-//deleta um cadastro
+//deleta um login
 
-app.delete("/deletar-cadastro/:id", (req, res) => {
+app.delete("/deletar-login/:id", (req, res) => {
     const id = req.params.id;
-    connection.query("delete from cadastros where id = ?", id, (err, result) => {
+    connection.query("delete from login where id = ?", id, (err, result) => {
         if (err) {
-            console.log("Ocorreu um erro para tentar deletar seu cadastros");
+            console.log("Ocorreu um erro para tentar deletar seu login");
         } else {
             res.json(result);
         }
     })
 })
 
-// consulta os cadastros
+// consulta os login
 
-app.get("/consultar-cadastro", (req, res) => {
-    connection.query("select * from cadastros", (err, result) => {
+app.get("/consultar-login", (req, res) => {
+    connection.query("select * from login", (err, result) => {
         if (err) {
-            console.log("Ocorreu um erro para tentar consultar seus cadastros");
+            console.log("Ocorreu um erro para tentar consultar seus login");
         } else {
             res.json(result);
         }
     })
 })
 
-//alterar um cadastro
-app.put("/editar-cadastro", (req, res) => {
+//alterar um login
+app.put("/editar-login", (req, res) => {
     const {id} = req.body;
-    const {nome, cpf, email, idade, senha} = req.body;
-    const cadastros = {nome, cpf, email, idade, senha};
-    connection.query ("update cadastros set ? where id = ?", [cadastros, id], (err, result) => {
+    const {nome, senha} = req.body;
+    const login = {nome, senha};
+    connection.query ("update login set ? where id = ?", [login, id], (err, result) => {
         if (err) {
-            console.log("Ocorreu um erro para tentar editar seu cadastros");
+            console.log("Ocorreu um erro para tentar editar seu login");
         } else {
             res.json(result);
         }

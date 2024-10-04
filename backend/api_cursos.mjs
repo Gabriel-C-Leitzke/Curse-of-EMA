@@ -36,8 +36,8 @@ app.use(json())
 //criar um novo curso
 
 app.post("/novo-curso", (req, res) => {
-    const {nome, duracao, professor} = req.body;
-    const novo_curso = {nome, duracao, professor};
+    const {nome, turno, descricao} = req.body;
+    const novo_curso = {nome, turno, descricao};
     connection.query("insert into cursos set ?", novo_curso, (err, result) => {
         if (err) {
             console.log("Deu erro para tentar cadastrar um novo curso");
@@ -75,8 +75,8 @@ app.get("/consultar-curso", (req, res) => {
 //alterar um curso
 app.put("/editar-curso", (req, res) => {
     const {id} = req.body;
-    const {nome, duracao, professor} = req.body;
-    const cursos = {nome, duracao, professor};
+    const {nome, turno, descricao} = req.body;
+    const cursos = {nome, turno, descricao};
     connection.query ("update cursos set ? where id = ?", [cursos, id], (err, result) => {
         if (err) {
             console.log("Ocorreu um erro para tentar editar seu curso");
