@@ -134,6 +134,10 @@
     width: 50vw;
     align-self: center;
 }
+.paragraphEMA{
+    font-size: 1.1rem;
+}
+
 #div1 {
     padding-right: 2rem;
     height: 100%;
@@ -149,9 +153,15 @@
 }
 
 #image2 {
-    width: 40vw;
-    height: 70vh;
+    width: 70vw;
+    height: 60vh;
 }
+
+#image3{
+    width: 40vw;
+    height: 75vh;
+}
+
 #maps {
     align-self: center;
     border-radius: 1rem;

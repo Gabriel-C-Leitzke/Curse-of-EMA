@@ -86,6 +86,58 @@ app.put("/editar-curso", (req, res) => {
     })
 })
 
+app.post("/novo-login", (req, res) => {
+    const {login, senha} = req.body;
+    const novo_login = {login, senha};
+    connection.query("insert into login set ?", novo_login, (err, result) => {
+        if (err) {
+            console.error('Erro ao inserir novo login:', err);
+            res.status(500).json({ error: 'Erro ao inserir novo login' });
+        } else {
+            res.json(result);
+        }
+    });
+});
+
+//deleta um login
+
+app.delete("/deletar-login/:id", (req, res) => {
+    const id = req.params.id;
+    connection.query("delete from login where id = ?", id, (err, result) => {
+        if (err) {
+            console.log("Ocorreu um erro para tentar deletar seu login");
+        } else {
+            res.json(result);
+        }
+    })
+})
+
+// consulta os login
+
+app.get("/consultar-login", (req, res) => {
+    connection.query("select * from login", (err, result) => {
+        if (err) {
+            console.log("Ocorreu um erro para tentar consultar seus login");
+        } else {
+            res.json(result);
+        }
+    })
+})
+
+//alterar um login
+app.put("/editar-login", (req, res) => {
+    const {id} = req.body;
+    const {login, senha} = req.body;
+    const put_login = {login, senha};
+    connection.query ("update login set ? where id = ?", [put_login, id], (err, result) => {
+        if (err) {
+            console.log("Ocorreu um erro para tentar editar seu login");
+        } else {
+            res.json(result);
+        }
+    })
+})
+
 app.listen(port, () => {
     console.log(`A sua API está funcionando na porta ${port}`);
   });
