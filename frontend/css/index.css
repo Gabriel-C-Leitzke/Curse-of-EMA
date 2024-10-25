@@ -122,10 +122,44 @@
 }
 
 .h1titulo {
+    display: flex;
+    flex-direction: column;
     font-size: 2rem;  
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Table {
+    width: 100vw;
+  }
+  
+  thead, tbody {
+    display: flex;
+  }
+  
+  thead th, tbody td {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  tbody td {
+    border: none;
+  }
+  
+  thead {
+    width: 20%;
+  }
+  
+  tbody {
+    width: 80%;
+  }
+  
 
 .image {
     border-radius: 2rem;
